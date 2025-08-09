@@ -1,7 +1,7 @@
 # BitStream 🎥⚡
 
 BitStream is a Twitch-style streaming platform powered built on Stacks.
-Creators can livestream and receive instant Bitcoin sBTC orSTX tips without intermediaries.
+Creators can livestream and receive instant Bitcoin sBTC or STX tips without intermediaries.
 Viewers can also watch saved videos hosted by creators on their own storage.
 
 ---
@@ -68,18 +68,19 @@ STACKS_API_URL=https://stacks-node-api.testnet.stacks.co
 ### Run the development server
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ---
 
 ## 🎯 Roadmap
 
-- [x] Live streaming MVP
-- [x] sBTC tipping
-- [x] Creator BYOS video hosting
-- [ ] Optional pay-per-view for recordings
-- [ ] Chat system for streams
+- [ ] Authentication
 - [ ] Stream discovery page
+- [ ] Chat system for streams
+- [ ] sBTC/SYX tipping
+- [ ] Creator BYOS video hosting
+- [ ] Optional pay-per-view for recordings
+- [ ] Live streaming MVP
 
 ---
