@@ -1,5 +1,4 @@
 import { connect, disconnect, getLocalStorage } from "@stacks/connect";
-import { toast } from "sonner";
 
 export const isConnected = async (): Promise<boolean> => {
 	return isConnected();
@@ -12,7 +11,7 @@ export const getWalletAddress = () => {
 
 export const connectWallet = async () => {
 	try {
-		const response = await connect({ network: "testnet" });
+		const response = await connect();
 		return response.addresses[2].address;
 	} catch (error) {
 		console.error("Error connecting wallet:", error);
