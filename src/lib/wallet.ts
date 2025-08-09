@@ -1,5 +1,4 @@
 import { connect, disconnect, getLocalStorage } from "@stacks/connect";
-import { toast } from "sonner";
 
 export const isConnected = async (): Promise<boolean> => {
 	return isConnected();
