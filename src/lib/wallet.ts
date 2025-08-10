@@ -12,7 +12,10 @@ export const getWalletAddress = () => {
 export const connectWallet = async () => {
 	try {
 		const response = await connect();
-		return response.addresses[2].address;
+		const stxAddress = response.addresses.find(
+			(addr) => addr.symbol?.toLowerCase() === "stx",
+		);
+		return stxAddress?.address;
 	} catch (error) {
 		console.error("Error connecting wallet:", error);
 		throw error;
